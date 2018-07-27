@@ -1,0 +1,588 @@
+/* ********************************************
+                 HEADER
+******************************************** */
+
+header {
+    background: transparent;
+}
+
+/* ********************************************
+                 LOGO
+******************************************** */
+
+.header--logo {
+    justify-content: center;
+}
+
+.logo {
+    width: 355px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.espace-voyage {
+    .picto--header {
+        display: inline-block;
+        align-items: center;
+        justify-content: space-between;
+        width: 70px;
+        padding: 10px;
+    }
+}
+
+/* ********************************************
+                 TOP NAV
+******************************************** */
+
+.block-nl {
+    position: relative;
+    .nl-link {
+        margin: 0;
+    }
+    &:hover .newsletter-form {
+        display: flex;
+    }
+    .newsletter-form {
+        display: none;
+        position: absolute;
+    }
+}
+
+.top--nav--left {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.top--nav {
+    background-color: $dark-brown;
+    color: white;
+    justify-content: space-between;
+    text-align: center;
+    .container {
+        position: relative;
+        left: 50px;
+    }
+}
+
+.espace-voyage {
+    display: block;
+    .picto--header {
+        display: inline-block;
+    }
+}
+
+/* ********************************************
+                MAIN-NAV
+******************************************** */
+
+.accueil--nav {
+    position: relative;
+    text-align: center;
+}
+
+.main--nav {
+    display: block;
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    a {
+        display: block;
+        color: white;
+        padding: 0.7rem;
+        &:hover {
+            color: $orange;
+        }
+    }
+}
+
+.menu-flou {
+    display: none;
+}
+
+.sous-menu {
+    display: none;
+    li {
+        background-color: rgba(63, 126, 192, 0.8);
+        border-bottom: 1px solid $dark-brown;
+        padding: 10px 5px;
+        width: 200px;
+        a {
+            font-size: 1.2rem;
+            color: #fff;
+            width: 100px;
+            &:hover {
+                color: darken($color: $orange, $amount: 20%)
+            }
+        }
+    }
+}
+
+/* ********************************************
+                 RS
+******************************************** */
+
+.rs {
+    position: fixed;
+    display: block;
+    order: 1;
+    width: 50px;
+    left: 10px;
+    top: 40%;
+    z-index: 2;
+    &:last-of-type {
+        top: calc(40% + 60px);
+    }
+}
+
+/* ********************************************
+                 BURGER
+******************************************** */
+
+.burger {
+    display: none;
+}
+
+/* ********************************************
+                 TITLE
+******************************************** */
+
+form {
+    width: 60%;
+}
+
+.search-form {
+    align-self: center;
+    background-color: white;
+    border-radius: 30px;
+    border: 2px solid $orange;
+    color: $dark-brown;
+    justify-self: center;
+    display: flex;
+    margin: 0 auto;
+    input[type="text"] {
+        flex-basis: 80%;
+        border: 0;
+        background: none;
+        font-size: 1rem;
+        padding: 1rem 1.5rem;
+        transition: background 0.3s;
+        &:focus {
+            background: rgba($orange, 0.5s);
+            outline-color: white;
+        }
+        &::placeholder {
+            color: $dark-brown;
+        }
+    }
+    button {
+        display: flex;
+        background: $orange;
+        border: 3px solid $orange;
+        border-radius: 0 30px 30px 0;
+        font-size: 0;
+        flex-basis: 20%;
+        color: #fff;
+        cursor: pointer;
+        padding: 0 1rem;
+        .fa {
+            font-size: 1.5rem;
+            transition: 0.3s;
+        }
+        &:hover .fa {
+            transform: translateX(-4px);
+        }
+    }
+}
+
+.dests {
+    display: none;
+}
+
+.fa-caret-down {
+    align-items: center;
+    display: flex;
+    font-size: 1rem;
+    padding-right: 20px;
+}
+
+.fa-search {
+    display: block;
+}
+
+.accueil--title {
+    h1 {
+        font-size: 2.1rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+// <!-- /* ********************************************
+// SLIDER
+// ******************************************** */ -->
+.slider {
+    display: block;
+}
+
+// /* ********************************************
+//                 MAIN
+// ******************************************** */
+// /* ********************************************
+//                  SECTION DESTINATIONS
+// ******************************************** */
+.title--destinations {
+    h3 {
+        align-items: center;
+        display: flex;
+        font-size: 1.9rem;
+        justify-content: space-evenly;
+        margin: 0 auto;
+    }
+    .p1 {
+        flex-basis: 50%;
+    }
+    .p2 {
+        flex-basis: 50%;
+    }
+}
+
+.destinations {
+    .destinations--title {
+        position: relative;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        .encart--1 {
+            flex-basis: 30%;
+            margin: 10px;
+        }
+        .encart--2 {
+            flex-basis: 30%;
+            margin: 10px;
+        }
+        .encart--3 {
+            flex-basis: 30%;
+            margin: 10px;
+        }
+        .encart--4 {
+            flex-basis: 30%;
+            margin: 10px;
+        }
+        .encart--5 {
+            flex-basis: 30%;
+            margin: 10px;
+        }
+        .encart--6 {
+            flex-basis: 30%;
+            margin: 10px;
+        }
+    }
+    .destinations--img {
+        margin-bottom: 20px;
+    }
+}
+
+.destinations--texte {
+    .p1 {
+        font-size: 1.4rem;
+    }
+    .p2 {
+        font-size: 1.4rem;
+    }
+    .a {
+        color: $orange;
+        background-color: white;
+        border: 2px solid $orange;
+        border-radius: 30px;
+        font-size: 1.5rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+}
+
+// <!-- =================================================
+// SECTION AZTREK
+// ================================================ -->
+.content--2 {
+    background: transparent;
+    color: $dark-brown;
+    margin-bottom: 30px;
+    article {
+        display: flex;
+        >div {
+            flex-basis: 50%;
+        }
+        .photo-aztrek {
+            position: relative;
+            flex-basis: 59%;
+            h3 {
+                color: white;
+                position: absolute;
+                top: 0;
+            }
+        }
+        .texte-aztrek {
+            flex-basis: 39%;
+        }
+    }
+    img {
+        display: block;
+    }
+    h3 {
+        color: $dark-brown;
+        padding: 25px;
+        font-size: 1.5rem;
+    }
+    .logo-aztrek-brun {
+        width: 45px;
+        position: absolute;
+        right: 15px;
+        bottom: 20px;
+    }
+    .p2 {
+        display: inline-block;
+    }
+    .p1 {
+        font-size: 0.9rem;
+        margin: 0;
+    }
+    p {
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin: 0 auto;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+.infos {
+    color: $dark-brown;
+    background-color: white;
+    border: 2px solid $dark-brown;
+    border-radius: 30px;
+    font-size: 1.4rem;
+    padding: 10px 30px;
+    text-align: center;
+    margin: 20px;
+}
+
+/* ***
+*****************************************
+                 SECTION SUGGESTIONS
+
+******************************************** */
+
+.suggestions {
+    margin: 0 auto;
+}
+
+.c3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    .encart--1 {
+        flex-basis: 49%;
+    }
+    .encart--2 {
+        flex-basis: 49%;
+    }
+    .encart--3 {
+        flex-basis: 49%;
+    }
+    .encart--4 {
+        flex-basis: 49%;
+    }
+}
+
+/* ********************************************
+                COMMUNAUTÉ
+
+******************************************** */
+
+// ================================================ -->
+.content--5 {
+    margin: 60px 0;
+    text-align: center;
+}
+
+.logo-aztrek-blanc {
+    width: 45px;
+}
+
+.communaute {
+    text-align: center;
+    margin: 0 auto;
+    .p2 {
+        display: block;
+        font-size: 1rem;
+    }
+    .p1 {
+        font-size: 1rem;
+    }
+    span {
+        display: inline;
+    }
+    .texte-communaute {
+        margin: 0 auto;
+    }
+}
+
+// <!-- =================================================
+// SECTION DERNIÈRES ACTUS
+// ================================================ -->
+.content--6 {
+    h2 {
+        font-size: 2.1rem;
+    }
+    .container--actus {
+        .picto {
+            height: auto;
+            padding: 20px 20px;
+            width: 130px;
+        }
+    }
+}
+
+/* ********************************************
+               NEWSLETTER
+
+******************************************** */
+
+.newsletter {
+    margin: 0 auto;
+    .newsletter--texte {
+        font-size: 1.7rem;
+    }
+    .newsletter--search-form {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        margin-right: 110px;
+        text-align: center;
+        input {
+            border: 1px solid $orange;
+            border-radius: 30px 0 0 30px;
+            color: $dark-brown;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        button {
+            background-color: $orange;
+            border: 1px solid $orange;
+            border-radius: 0 30px 30px 0px;
+            color: white;
+            font-size: 1.5rem;
+            text-align: center;
+            &:hover {
+                background-color: #fff;
+                color: $orange;
+                -webkit-transform: scale(1.3);
+                -ms-transform: scale(1.3);
+                transform: scale(1.3);
+            }
+        }
+    }
+}
+
+/* ********************************************
+                GARANTIES
+
+******************************************** */
+
+.garanties {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    .article {
+        flex-basis: 19%;
+    }
+    p {
+        display: inline-block;
+        color: $dark-brown;
+        font-size: 1rem;
+    }
+}
+
+.garanties--title {
+    width: 100%;
+    padding: 20px;
+}
+
+.bordure2 {
+    margin-top: 50px
+}
+
+/* ********************************************
+               FOOTER
+
+******************************************** */
+
+.footer--logo {
+    display: none;
+}
+
+.footer--logo2 {
+    display: block;
+    width: 100px;
+}
+
+.footer--destinations {
+    padding: 20px;
+}
+
+.footer--themes {
+    padding: 20px;
+}
+
+.bordure2-2 {
+    display: none;
+}
+
+.bordure3 {
+    display: none;
+}
+
+.bordure4 {
+    display: none;
+}
+
+.bordure5 {
+    display: none;
+}
+
+.footer--middle {
+    display: flex;
+    flex-direction: row;
+    >div {
+        flex-basis: 33.33%;
+    }
+}
+
+.footer--eco {
+    img {
+        width: 85px;
+    }
+}
+
+.footer--payment {
+    img {
+        width: 50px;
+        padding: 5px;
+    }
+}
+
+.rs--footer {
+    img {
+        width: 40px;
+    }
+}

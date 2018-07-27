@@ -1,0 +1,92 @@
+// /* ********************************************
+//                  HEADER
+// ******************************************** */
+// /* ********************************************
+//                  SECTION DESTINATIONS
+// ******************************************** */
+.title--destinations {
+    align-items: center;
+    display: flex;
+    a {
+    display: inline-block;
+    }
+    .p1 {
+        flex-basis: 50%;
+    }
+    .p2 {
+        flex-basis: 50%;
+    }
+}
+
+.destinations {
+    margin: 0 auto;
+    .container {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .encart--1 {
+            flex-basis: 33.33%;
+        }
+        .encart--2 {
+            flex-basis: 33.33%;
+        }
+        .encart--3 {
+            flex-basis: 33.33%;
+        }
+        .encart--4 {
+            flex-basis: 33.33%;
+        }
+        .encart--5 {
+            flex-basis: 33.33%;
+        }
+        .encart--6 {
+            flex-basis: 33.33%;
+        }
+    }
+}
+
+/* ********************************************
+                 SECTION SUGGESTIONS
+
+******************************************** */
+
+.suggestions {
+    margin: 0 auto;
+    .container {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .encart--1 {
+            flex-basis: 50%;
+        }
+        .encart--2 {
+            flex-basis: 50%;
+        }
+        .encart--3 {
+            flex-basis: 50%;
+        }
+        .encart--4 {
+            flex-basis: 50%;
+        }
+    }
+}
+
+/* ********************************************
+                GARANTIES
+
+******************************************** */
+
+.garanties {
+    margin: 0 auto;
+    .container {
+        align-items: center;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        .encart {
+            flex-basis: 19%;
+        }
+    }
+}

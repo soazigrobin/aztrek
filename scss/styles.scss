@@ -1,0 +1,16 @@
+
+@import 'partials/animate';
+
+@import 'partials/variables';
+
+@import 'partials/mixins';
+//pour le mobile = bases 
+@import 'partials/bases';
+//pour la tablette= partials/tablet
+@media only screen and (min-width: $bp-tablet) {
+    @import 'partials/tablet';
+}
+//pour le desktop= partials/desktop
+@media only screen and (min-width: $bp-desktop) {
+    @import 'partials/desktop';
+}

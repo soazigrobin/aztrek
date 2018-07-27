@@ -1,0 +1,27 @@
+// PUCES 
+@mixin puce($size, $dark-blue) {
+    &::before {
+        content: '';
+        display: inline-block;
+        width: $size;
+        height: $size;
+        border-radius: 50%;
+        background-color: $dark-blue;
+        margin-right: $size;
+    }
+}
+
+// BUTTON
+@mixin button($fontS, $dark-blue, $light-blue) {
+    display: inline-block;
+    background-color: $dark-blue;
+    color: #fff;
+    font-size: $fontS;
+    padding: 0.875rem 2em;
+    border-radius: 4px;
+    transition: 0.3s;
+    &:hover,
+    &:focus {
+        background-color: darken($dark-blue: $dark-blue, $amount: 20%);
+    }
+}
