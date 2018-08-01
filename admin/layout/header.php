@@ -44,7 +44,9 @@ require_once __DIR__. '/../security.php';
             <ul class="nav flex-column">
                <?php display_nav_item(SITE_ADMIN, "Dashboard", "fa-home", true); ?>
                <?php display_nav_item(SITE_ADMIN. "crud/categories/", "Catégories", "fa-tags"); ?>
-               <?php display_nav_item(SITE_ADMIN. "crud/projets/", "Projets", "fa-leaf"); ?>
+               <?php display_nav_item(SITE_ADMIN. "crud/sejours/", "Séjours", "fa-briefcase"); ?>
+               <?php display_nav_item(SITE_ADMIN. "crud/pays/", "Pays", "fa-globe"); ?>
+               <?php display_nav_item(SITE_ADMIN. "crud/departs/", "Départs", "fa-plane"); ?>
             </ul>           
           </div>
         </nav>
